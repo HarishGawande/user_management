@@ -2,12 +2,12 @@
 
 # ************** USER MANAGEMENT SCRIPT *******************
 
-echo "Hello! $USERNAME"
+echo "Hello! $(whoami)"
 
 echo -e "  \n ================================================"
 # To get present users & groups.
-PUL=$(awk -F: '$3 >= 1000 {print $1}' /etc/passwd | tail -n +3)
-PUG=$(awk -F: '$3 >= 1000 {print $1}' /etc/group | tail -n +3)
+PUL=$(awk -F: '$3 >= 1000 {print $1}' /etc/passwd | tail -n 3)
+PUG=$(awk -F: '$3 >= 1000 {print $1}' /etc/group | tail -n 3)
 
 echo -e "  \n PRESENT_USERS_LIST: \n $PUL"
 echo -e "  \n ================================================"
