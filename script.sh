@@ -2,7 +2,7 @@
 
 # ************** USER MANAGEMENT SCRIPT *******************
 
-echo "Hello! $(whoami)"
+echo -e " \n Hello! $(whoami)"
 
 echo -e "  \n ================================================"
 # To get present users & groups.
